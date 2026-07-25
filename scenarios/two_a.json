@@ -1,0 +1,23 @@
+{
+  "name": "two_a",
+  "difficulty": "easy",
+  "intro": "A two-stage lock. Clear both modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - WIRES\nCut exactly one wire:\n- If there are three or more wires, cut the BLUE wire.\n- Otherwise, cut the FIRST wire.\n\nMODULE 2 - KEYPAD\nOne symbol glows above the keypad. Enter its code:\n- star: 1111\n- moon: 2222\n- sun: 3333",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Four wires, left to right: red, blue, green, yellow.",
+      "answer": "blue",
+      "accept": ["blue", "blue wire", "cut blue", "cut the blue wire", "second wire", "wire 2"]
+    },
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A keypad with a single glowing MOON symbol above it.",
+      "answer": "2222",
+      "accept": ["2222", "2 2 2 2", "enter 2222"]
+    }
+  ]
+}

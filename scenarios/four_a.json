@@ -1,0 +1,37 @@
+{
+  "name": "four_a",
+  "difficulty": "hard",
+  "intro": "A four-stage security lock. Clear all four modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - WIRES\nCut exactly one wire:\n- If the first wire is black, cut the LAST wire.\n- If there is a white wire, cut the WHITE wire.\n- Otherwise, cut the FIRST wire.\n\nMODULE 2 - BUTTON\n- If the word is HOLD, PRESS the button.\n- If the button is blue, HOLD the button.\n- Otherwise, PRESS the button.\n\nMODULE 3 - KEYPAD\nOne symbol glows. Enter its code:\n- spiral: 1212\n- wave: 3434\n- bolt: 5656\n\nMODULE 4 - LEVERS\nThree levers (top, middle, bottom), each UP or DOWN:\n- If the top lever is UP, pull the BOTTOM lever.\n- Otherwise, pull the TOP lever.",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Four wires, left to right: red, white, blue, green.",
+      "answer": "white",
+      "accept": ["white", "white wire", "cut white", "cut the white wire", "second wire", "wire 2"]
+    },
+    {
+      "id": "button",
+      "title": "A single button",
+      "observation": "A GREEN button showing the word WAIT.",
+      "answer": "press",
+      "accept": ["press", "press it", "press the button"]
+    },
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A keypad with a glowing BOLT symbol above it.",
+      "answer": "5656",
+      "accept": ["5656", "5 6 5 6", "enter 5656"]
+    },
+    {
+      "id": "levers",
+      "title": "Three levers",
+      "observation": "The TOP lever is DOWN, the MIDDLE lever is UP, the BOTTOM lever is DOWN.",
+      "answer": "top",
+      "accept": ["top", "top lever", "pull top", "pull the top lever"]
+    }
+  ]
+}

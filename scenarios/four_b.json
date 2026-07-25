@@ -1,0 +1,37 @@
+{
+  "name": "four_b",
+  "difficulty": "hard",
+  "intro": "A four-stage security lock. Clear all four modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - BUTTON\n- If the button is red, HOLD it.\n- Otherwise, PRESS it.\n\nMODULE 2 - WIRES\nCut exactly one wire:\n- If there are more than three wires, cut the SECOND wire.\n- Otherwise, cut the LAST wire.\n\nMODULE 3 - LEVERS\nThree levers (left, middle, right), each UP or DOWN:\n- If all levers are DOWN, pull the LEFT lever.\n- If the right lever is UP, pull the RIGHT lever.\n- Otherwise, pull the MIDDLE lever.\n\nMODULE 4 - KEYPAD\nOne symbol glows. Enter its code:\n- heart: 2020\n- star: 4040\n- key: 6060",
+  "modules": [
+    {
+      "id": "button",
+      "title": "A single button",
+      "observation": "A round button glowing RED.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button"]
+    },
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Five wires, left to right: red, green, blue, yellow, black.",
+      "answer": "second wire",
+      "accept": ["second wire", "wire 2", "cut the second wire", "green", "cut green"]
+    },
+    {
+      "id": "levers",
+      "title": "Three levers",
+      "observation": "The LEFT lever is DOWN, the MIDDLE lever is DOWN, the RIGHT lever is UP.",
+      "answer": "right",
+      "accept": ["right", "right lever", "pull right", "pull the right lever"]
+    },
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A keypad with a glowing KEY symbol above it.",
+      "answer": "6060",
+      "accept": ["6060", "6 0 6 0", "enter 6060"]
+    }
+  ]
+}

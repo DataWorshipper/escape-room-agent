@@ -1,0 +1,23 @@
+{
+  "name": "two_b",
+  "difficulty": "easy",
+  "intro": "A two-stage lock. Clear both modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - BUTTON\nRead the button's colour and word:\n- If the word is GO, PRESS the button.\n- If the button is red, HOLD the button.\n- Otherwise, PRESS the button.\n\nMODULE 2 - LEVERS\nTwo levers (left, right), each UP or DOWN:\n- If the left lever is UP, pull the RIGHT lever.\n- Otherwise, pull the LEFT lever.",
+  "modules": [
+    {
+      "id": "button",
+      "title": "A single button",
+      "observation": "A RED button showing the word STOP.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button"]
+    },
+    {
+      "id": "levers",
+      "title": "Two levers",
+      "observation": "The LEFT lever is UP and the RIGHT lever is DOWN.",
+      "answer": "right",
+      "accept": ["right", "right lever", "pull right", "pull the right lever"]
+    }
+  ]
+}

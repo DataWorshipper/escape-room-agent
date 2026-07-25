@@ -1,0 +1,16 @@
+{
+  "name": "one_a",
+  "difficulty": "trivial",
+  "intro": "A single-stage lock. Disarm the one module to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - WIRES\nCut exactly one wire:\n- If there is a red wire, cut the RED wire.\n- Otherwise, cut the LAST wire.",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Three wires, left to right: green, red, blue.",
+      "answer": "red",
+      "accept": ["red", "red wire", "cut red", "cut the red wire", "second wire", "wire 2"]
+    }
+  ]
+}

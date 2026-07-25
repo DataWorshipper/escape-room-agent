@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "escape-room": {
+      "command": "C:\\Users\\Abhiraj Mandal\\OneDrive\\Desktop\\escape-room-agent\\venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\Abhiraj Mandal\\OneDrive\\Desktop\\escape-room-agent\\server.py",
+        "C:\\Users\\Abhiraj Mandal\\OneDrive\\Desktop\\escape-room-agent\\scenarios\\two_a.json"
+      ]
+    }
+  }
+}

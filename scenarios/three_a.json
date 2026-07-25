@@ -1,0 +1,30 @@
+{
+  "name": "three_a",
+  "difficulty": "medium",
+  "intro": "A three-stage lock. Clear all three modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - WIRES\nCut exactly one wire:\n- If there is exactly one green wire, cut the GREEN wire.\n- If there are two or more red wires, cut the FIRST wire.\n- Otherwise, cut the LAST wire.\n\nMODULE 2 - BUTTON\n- If the button is YELLOW, HOLD it.\n- Otherwise, PRESS it.\n\nMODULE 3 - KEYPAD\nOne symbol glows. Enter its code:\n- circle: 4040\n- square: 5050\n- triangle: 6060",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Four wires, left to right: red, blue, green, yellow.",
+      "answer": "green",
+      "accept": ["green", "green wire", "cut green", "cut the green wire", "third wire", "wire 3"]
+    },
+    {
+      "id": "button",
+      "title": "A single button",
+      "observation": "A round button glowing YELLOW.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button"]
+    },
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A keypad with a glowing SQUARE symbol above it.",
+      "answer": "5050",
+      "accept": ["5050", "5 0 5 0", "enter 5050"]
+    }
+  ]
+}

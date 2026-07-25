@@ -1,0 +1,37 @@
+{
+  "name": "lockdown",
+  "difficulty": "hard",
+  "intro": "SECURITY LOCKDOWN. The exit is sealed behind a four-stage security panel. The Operator faces the panel; the Expert holds the classified manual. Disarm all four stages to escape. Four mistakes and the panel locks for good.",
+  "max_strikes": 4,
+  "manual": "SECURITY PANEL MANUAL\n\nMODULE 1 - WIRES\nCut exactly one wire. Use the FIRST rule that matches:\n1. If there are more red wires than blue wires, cut the LAST red wire.\n2. If there is exactly one yellow wire, cut the YELLOW wire.\n3. Otherwise, cut the FIRST wire.\n\nMODULE 2 - BUTTON\nRead the button's colour and word. Use the FIRST rule that matches:\n1. If the word is DETONATE, PRESS the button.\n2. If the button is red, HOLD the button.\n3. If the button is blue and the word is WAIT, HOLD the button.\n4. Otherwise, PRESS the button.\n\nMODULE 3 - KEYPAD\nOne symbol glows above the keypad. Enter its code:\n- star: 4471\n- diamond: 8092\n- circle: 1337\n- triangle: 6205\n\nMODULE 4 - LEVERS\nThree levers (red, blue, green) are each UP or DOWN. Use the FIRST rule that matches:\n1. If the red lever is UP, pull the GREEN lever.\n2. If the red lever is DOWN and the blue lever is UP, pull the RED lever.\n3. Otherwise, pull the BLUE lever.",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A bank of coloured wires",
+      "observation": "A row of four wires, left to right: blue, yellow, green, red.",
+      "answer": "yellow",
+      "accept": ["yellow", "yellow wire", "cut the yellow wire", "cut yellow", "second wire", "wire 2"]
+    },
+    {
+      "id": "button",
+      "title": "A single round button",
+      "observation": "A round button glowing BLUE, showing the word WAIT.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button"]
+    },
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A numeric keypad with a single glowing DIAMOND symbol lit above it.",
+      "answer": "8092",
+      "accept": ["8092", "8 0 9 2", "8-0-9-2", "enter 8092"]
+    },
+    {
+      "id": "levers",
+      "title": "Three levers",
+      "observation": "Three levers: the RED lever is DOWN, the BLUE lever is UP, the GREEN lever is DOWN.",
+      "answer": "red",
+      "accept": ["red", "red lever", "pull red", "pull the red lever"]
+    }
+  ]
+}

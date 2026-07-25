@@ -1,0 +1,30 @@
+{
+  "name": "three_b",
+  "difficulty": "medium",
+  "intro": "A three-stage lock. Clear all three modules to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - KEYPAD\nOne symbol glows. Enter its code:\n- arrow: 7070\n- cross: 8080\n- dot: 9090\n\nMODULE 2 - LEVERS\nThree levers (red, blue, green), each UP or DOWN:\n- If the blue lever is DOWN, pull the RED lever.\n- If the blue lever is UP and the green lever is UP, pull the GREEN lever.\n- Otherwise, pull the BLUE lever.\n\nMODULE 3 - WIRES\nCut exactly one wire:\n- If there are no blue wires, cut the FIRST wire.\n- Otherwise, cut the BLUE wire.",
+  "modules": [
+    {
+      "id": "keypad",
+      "title": "A symbol keypad",
+      "observation": "A keypad with a glowing CROSS symbol above it.",
+      "answer": "8080",
+      "accept": ["8080", "8 0 8 0", "enter 8080"]
+    },
+    {
+      "id": "levers",
+      "title": "Three levers",
+      "observation": "The RED lever is UP, the BLUE lever is DOWN, the GREEN lever is UP.",
+      "answer": "red",
+      "accept": ["red", "red lever", "pull red", "pull the red lever"]
+    },
+    {
+      "id": "wires",
+      "title": "A bundle of wires",
+      "observation": "Three wires, left to right: yellow, green, blue.",
+      "answer": "blue",
+      "accept": ["blue", "blue wire", "cut blue", "cut the blue wire", "third wire", "wire 3"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "one_b",
+  "difficulty": "trivial",
+  "intro": "A single-stage lock. Disarm the one module to escape.",
+  "max_strikes": 3,
+  "manual": "PANEL MANUAL\n\nMODULE 1 - BUTTON\nRead the button:\n- If the button is GREEN, HOLD it.\n- Otherwise, PRESS it.",
+  "modules": [
+    {
+      "id": "button",
+      "title": "A single button",
+      "observation": "A round button glowing GREEN.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button"]
+    }
+  ]
+}

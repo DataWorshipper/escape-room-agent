@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "scenario": "scenarios/one_b.json",
+    "model": "gemini-3.1-flash-lite",
+    "started": 1785003518.9050863,
+    "result": "won",
+    "turns": 11,
+    "total_tokens": 5091
+  },
+  "events": [
+    {
+      "turn": 0,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "look",
+          "args": {},
+          "result": "Module 1 of 1 - A single button\n\nA round button glowing GREEN."
+        }
+      ],
+      "tokens": 392,
+      "seconds": 0.98,
+      "status": "playing"
+    },
+    {
+      "turn": 1,
+      "role": "expert",
+      "said": "",
+      "actions": [
+        {
+          "tool": "read_manual",
+          "args": {},
+          "result": "PANEL MANUAL\n\nMODULE 1 - BUTTON\nRead the button:\n- If the button is GREEN, HOLD it.\n- Otherwise, PRESS it."
+        }
+      ],
+      "tokens": 311,
+      "seconds": 0.76,
+      "status": "playing"
+    },
+    {
+      "turn": 2,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "send_message",
+          "args": {
+            "text": "I'm at Module 1. It's a single round button that is glowing green. What should I do?"
+          },
+          "result": "Message sent."
+        }
+      ],
+      "tokens": 460,
+      "seconds": 0.86,
+      "status": "playing"
+    },
+    {
+      "turn": 3,
+      "role": "expert",
+      "said": "",
+      "actions": [
+        {
+          "tool": "send_message",
+          "args": {
+            "text": "I have the manual for a button. What color is the button?"
+          },
+          "result": "Message sent."
+        }
+      ],
+      "tokens": 385,
+      "seconds": 0.75,
+      "status": "playing"
+    },
+    {
+      "turn": 4,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "read_messages",
+          "args": {},
+          "result": "expert: I have the manual for a button. What color is the button?"
+        }
+      ],
+      "tokens": 486,
+      "seconds": 0.67,
+      "status": "playing"
+    },
+    {
+      "turn": 5,
+      "role": "expert",
+      "said": "",
+      "actions": [
+        {
+          "tool": "read_messages",
+          "args": {},
+          "result": "operator: I'm at Module 1. It's a single round button that is glowing green. What should I do?"
+        }
+      ],
+      "tokens": 411,
+      "seconds": 62.28,
+      "status": "playing"
+    },
+    {
+      "turn": 6,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "send_message",
+          "args": {
+            "text": "It's green."
+          },
+          "result": "Message sent."
+        }
+      ],
+      "tokens": 535,
+      "seconds": 0.86,
+      "status": "playing"
+    },
+    {
+      "turn": 7,
+      "role": "expert",
+      "said": "",
+      "actions": [
+        {
+          "tool": "send_message",
+          "args": {
+            "text": "Hold the button."
+          },
+          "result": "Message sent."
+        }
+      ],
+      "tokens": 470,
+      "seconds": 0.75,
+      "status": "playing"
+    },
+    {
+      "turn": 8,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "read_messages",
+          "args": {},
+          "result": "expert: Hold the button."
+        }
+      ],
+      "tokens": 561,
+      "seconds": 1.42,
+      "status": "playing"
+    },
+    {
+      "turn": 9,
+      "role": "expert",
+      "said": "",
+      "actions": [],
+      "tokens": 486,
+      "seconds": 0.65,
+      "status": "playing"
+    },
+    {
+      "turn": 10,
+      "role": "operator",
+      "said": "",
+      "actions": [
+        {
+          "tool": "submit",
+          "args": {
+            "action": "hold"
+          },
+          "result": "Correct! Panel disarmed. You escaped."
+        }
+      ],
+      "tokens": 594,
+      "seconds": 0.77,
+      "status": "won"
+    }
+  ]
+}

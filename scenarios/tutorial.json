@@ -1,0 +1,23 @@
+{
+  "name": "tutorial",
+  "difficulty": "easy",
+  "intro": "Two maintenance rooms have sealed shut. A reset panel on the Operator's wall controls the lock, and the Expert holds its manual. Clear both modules to unlock the doors. Three wrong actions and the panel jams for good.",
+  "max_strikes": 3,
+  "manual": "PANEL RESET MANUAL\n\nMODULE A - WIRES\nCut exactly one wire:\n- If two or more wires are red, cut the BLUE wire.\n- Otherwise, if the last wire is yellow, cut the FIRST wire.\n- Otherwise, cut the LAST wire.\n\nMODULE B - BUTTON\nCheck the button's colour and label:\n- If the button glows green, HOLD it.\n- If the label says ABORT, PRESS it.\n- Otherwise, PRESS it.",
+  "modules": [
+    {
+      "id": "wires",
+      "title": "A tangle of coloured wires",
+      "observation": "A row of 4 wires, left to right: red, red, blue, yellow.",
+      "answer": "blue",
+      "accept": ["blue", "blue wire", "the blue wire", "cut blue", "cut the blue wire", "wire 3", "third wire"]
+    },
+    {
+      "id": "button",
+      "title": "A single round button",
+      "observation": "A round button glowing GREEN, with the label RESET.",
+      "answer": "hold",
+      "accept": ["hold", "hold it", "hold the button", "hold the reset button"]
+    }
+  ]
+}
